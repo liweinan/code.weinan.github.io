@@ -1,5 +1,8 @@
 package io.weinan.jdbc;
 
+import org.postgresql.util.PSQLException;
+import org.postgresql.util.PSQLState;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -11,8 +14,7 @@ import java.util.Properties;
  */
 public class DirectConnection {
 
-    public static void main(String[] args)  throws Exception {
-
+    public static void main(String[] args) throws Exception {
 
         Class.forName("org.postgresql.Driver");
 
@@ -27,11 +29,14 @@ public class DirectConnection {
         try {
             conn.setAutoCommit(true);
             Statement st = conn.createStatement();
-            st.executeQuery("insert into user_info (id, name, age) values (3, 'weli', 16);");
-
+            st.executeQuery("insert into user_info (id, name, age) values (10, 'weli', 16);");
+        } catch (PSQLException e) {
+            if (e.getSQLState().equals(PSQLState.NO_DATA.getState())) {
+                // expected
+            }
         } finally {
-            conn.commit();
-            conn.close();
+//            conn.commit();
+//            conn.close();
         }
 
     }

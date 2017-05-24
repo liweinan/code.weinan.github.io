@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/play-with-jdbc.iml" filepath="$PROJECT_DIR$/play-with-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/play-with-jdbc_main.iml" filepath="$PROJECT_DIR$/.idea/modules/play-with-jdbc_main.iml" group="play-with-jdbc" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/play-with-jdbc_test.iml" filepath="$PROJECT_DIR$/.idea/modules/play-with-jdbc_test.iml" group="play-with-jdbc" />
     </modules>
   </component>
 </project>

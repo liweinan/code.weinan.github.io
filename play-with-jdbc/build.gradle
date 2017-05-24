@@ -36,6 +36,4 @@ dependencies {
     // 'test.useTestNG()' to your build script.
     testCompile 'junit:junit:4.12'
 	compile 'org.postgresql:postgresql:42.0.1-SNAPSHOT'
-	runtime 'org.postgresql:postgresql:42.0.1-SNAPSHOT'
-
 }
