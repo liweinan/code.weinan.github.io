@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : jdbc-managed.war (exploded)">
+    <output-path>$PROJECT_DIR$/build/libs/exploded/jdbc-managed.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/build/libs/exploded/jdbc-managed.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="jdbc-in-wildfly_main/web/Web Gradle : jdbc-managed.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="jdbc-in-wildfly_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.21" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
